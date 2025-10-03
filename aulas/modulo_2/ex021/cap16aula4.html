@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grouping tags</title>
+    <style>
+        .aviso {
+            color: red;
+            font-weight: bold;
+            text-align: center;
+        }
+        .tags {
+            width: 10px;
+            background-color: lightpink;
+        }
+        .tags > p {
+            display: none;
+        }
+        .tags:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .tags:hover > p {
+            display:block;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+       <h1>meu site</h1>
+         <nav>
+          <a href="#">home</a> |
+          <a href="#">sobre</a> |
+          <a href="#">contato</a>
+    </header>
+    <main>
+        <section id="assunto_principal">
+            <h1>Assunto Principal</h1>
+            <p>A partir do html5 a maneira como se cria sites deu uma mudada</p>
+
+            <p>Antes usava-se muito a tag div para agrupar elementos dando um id para ela para identificala
+                
+            </p>
+            <p>ex:</p>
+            <img src="imagens/exemplo-divs.png" alt="exemplo de div" width="500"> 
+            <p>porem a partir do html 5 ganhamos novas tags que tambem são consideradas divs porem agora elas tem um significado, oque as torna semanticas</p>
+            <p>algumas dessas tags são:</p>
+            <ul>
+                <li class="tags">header 
+                    <p>a classe header serve para indicar o cabeçalho do seu site</p>
+                </li>
+                <li class="tags">nav
+                    <p>indica que o item é um menu de navegação</p>
+                </li>
+                <li class="tags">main
+                     <p>a tag main serve pra indicar o conteudo principal do seu site</p></li>
+                <li class="tags">section
+                    <p>indica uma seção do seu site</p>
+                </li>
+                <li class="tags">article 
+                    <p>indica um artigo, ou seja um conteudo que pode ser distribuido de forma independente</p>
+                </li>
+
+                <li class="tags">aside
+                    <p>indica um conteudo que é complementar ao conteudo principal, como uma barra lateral</p>
+                </li>
+
+                <li class="tags">footer
+                    <p>indica o rodapé do seu site</p>
+                </li>
+            </ul>
+            <h2 class="aviso">atenção</h2>
+            <p class="aviso">nenhuma dessas tags acrescenta ou retira funcionalidades, são apenas div porem com um significado semantico</p>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
