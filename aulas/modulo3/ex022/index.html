@@ -5,15 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>inicio</title>
     <style>
-            
+        :root {
+            --beige: #efeccaff;
+            --dim-gray: #706f6fff;
+            --black: #000000ff;
+            --coquelicot: #fc440fff;
+            --dark-blue: #1f01b9ff;
+        }
+
         * {
             margin: 0px;
             padding: 0px;
         }
+     
 
         #cabecalho {
             min-height: 100px;
-            background-color: rgba(95, 110, 173, 0.774);
+            background-color: var(--black);
         }
 
         .cabecalho-boxes {
@@ -21,18 +29,26 @@
             min-height: 15%;
             font-weight: bold;
             color: white;
-            background-color: royalblue;
+                     background-color: #000000ff;
+
         }
 
         #titulo-principal {
+            color: white;
             text-align: center;
             font-family: 'Courier New', Courier, monospace;
             padding-top: 20px;
         }
+
+        main > h1 {
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+            padding: 20px 0px;
+        }
         #caixa-principal {
             height: 300px;
             margin: 20px 2px;
-            border: 1px solid black;
+            border: 1px solid rgb(126, 125, 125);
             border-radius: 5px;
 
 
@@ -43,7 +59,7 @@
             border: 2px solid black;
             margin: 10px;
             border-radius: 5px; 
-            background-color: lightgray;
+            background-color: white;
             box-shadow: 2px 2px 5px gray;
             vertical-align: top;
 
