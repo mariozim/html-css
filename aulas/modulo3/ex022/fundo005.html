@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>alinhamento vertical</title>
     <style>
 
         * {
@@ -20,13 +20,44 @@
         header a:hover {
             color: blue;
         }
+
+        #container {
+            background-image: url('imagens/target001.png');
+            background-position: center;
+            background-size: 100% 100%;
+            position: relative;
+            height: 96vh;
+            background-color: purple;
+            padding: 10px;
+        }
+
+        #conteudo {
+            background-image: url('imagens/target001.png');
+            background-position: center;
+            background-size: 100% 100%;
+
+            position: absolute;
+            width: 400px;
+            height: 200px;
+            background-color: yellow;
+
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+
+        }
     </style>
 </head>
 <body>
     <header><a href="index.html"> &lt; voltar</a></header>
     <hr>
     <main>
-    
+        <section id="container">
+            <article id="conteudo">
+
+            </article>
+        </section>
     </main>
     
 </body>
