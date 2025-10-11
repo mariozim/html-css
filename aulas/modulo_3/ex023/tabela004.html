@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            height: 300px;
+
+        }
+
+        th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        td {
+            padding: 10px;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style> 
+</head>
+<body>
+    <table>
+        <tr>
+            <th scope="col">grupo</th>
+            <th scope="col">nomes</th>
+            <th scope="colgroup"colspan="3">filmes</th>
+        </tr>
+        <tr>
+            <tr>
+                <th scope="rowgroup" rowspan="4">homens</th >
+            </tr>
+            
+        </tr>
+        <tr>
+            <td>joão</td>
+            <td>vingadores</td>
+            <td>batman</td>
+            <td>superman</td>
+        </tr>
+        <tr>
+            <td>pedro</td>
+            <td>vingadores</td>
+            <td>batman</td>
+            <td>superman</td>
+        </tr>
+        <tr>
+            <td>carlos</td>
+            <td>vingadores</td>
+            <td>batman</td>
+            <td>superman</td>
+        </tr>
+        <tr>
+            <tr>
+                <th scope="rowgroup" rowspan="4">mulheres</th>
+            </tr>
+        </tr>
+        <tr>
+            <td>maria</td>
+            <td>vingadores</td>
+            <td>batman</td>
+            <td>superman</td>
+        </tr>
+        <tr>
+            <td>ana</td>
+            <td>vingadores</td>
+            <td>batman</td>
+            <td>superman</td>
+        </tr>
+        <tr>
+            <td>julia</td>
+            <td>vingadores</td>
+            <td>batman</td>
+            <td>superman</td>
+        </tr>
+
+    </table>
+</body>
+</html>
