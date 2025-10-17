@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pra que serve?</title>
+    <style>
+
+        .caixa-dicas {
+            display: inline;
+        }
+
+        .caixa-dicas .dica {
+            display: none;
+
+        }
+        .dica {
+            border: 1px solid black;
+            width: 50%;
+            position: absolute;
+            left: 500px;
+            border-radius: 10px;
+            padding-top: 0px;
+            background-color: rgba(211, 211, 211, 0.245);
+            
+        }   
+
+        .dica p {
+            padding: 0px 10px;
+        }
+
+        .dica h2 {
+            margin: 0px;
+            padding: 10px;
+            border-radius: 5px 5px 0px 0px;
+            border: 1px solid black;
+            background-color: rgba(128, 128, 128, 0.668);
+        }
+
+        .caixa-dicas:hover .dica {
+            display: inline;
+        }
+
+        .ver-dica {
+            position: absolute;
+            transform: translate(-0%,-180%);
+            left: 300px;
+            background-color: rgba(0, 255, 255, 0.156);
+            width: 150px;
+            padding: 1px 20px;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 10px;
+        
+        
+       }
+       label {
+        display: inline-block;
+        width: 50px;
+        margin-right: 40px;
+       }
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>pra que serve cada coisa que aprendemos sobre formularios ate agora?</h1>
+    <form action="#">
+
+        <p><label for="i-nome">nome:</label>
+        <input type="text" name="nome" id="i-nome">
+        <div class="caixa-dicas">
+            <div class="ver-dica">
+
+                ver dica
+            </div>
+            <div class="dica">
+                <h2>dica: nome</h2>
+                <p>o nome  serve para linguagens como python ou php para quando elas estão sendo ultilizadas de back end</p>
+             </div>
+        </div>
+        </p>
+        
+
+          <p><label for="i-nome">id:  </label>
+        <input type="text" name="nome" id="i-nome">
+        <div class="caixa-dicas">
+            <div class="ver-dica">
+
+                ver dica
+            </div>
+            <div class="dica">
+                <h2>dica:id</h2>
+                <p>o id serve como um identificador de variavel pras linguagens javascript e html</p>
+             </div>
+        </div>
+        </p>
+
+          <p><label for="i-nome">label:</label>
+        <input type="text" name="nome" id="i-nome">
+        <div class="caixa-dicas">
+            <div class="ver-dica">
+
+                ver dica
+            </div>
+            <div class="dica">
+                <h2>dica:label</h2>
+                <p>o label serve pra criar uma conexão entre o titulo e a caixa de input</p>
+             </div>
+        </div>
+        </p>
+
+          <p><label for="i-nome">autocomplete:</label>
+        <input type="text" name="nome" id="i-nome">
+        <div class="caixa-dicas">
+            <div class="ver-dica">
+
+                ver dica
+            </div>
+            <div class="dica">
+                <h2>dica:autocomplete</h2>
+                <p>o autocomplete e um dos parametros mais complexos, usando ele diretamente nas configurações do form temos as opções 'on' e 'off', de forma auto-explicativa eles ditam se tera ou não autocomplete com as sugestões do navegador.
+                    ja usando eles individualmente em um input temos muitas outras opções como passworld ou nickname que são informações semanticas que ajudaram o navegador a decidir quais sugestoes de autocomplete serão exibidas
+                </p>
+             </div>
+        </div>
+        </p>
+
+          <p><label for="i-nome">placeholder:</label>
+        <input type="text" name="nome" id="i-nome">
+        <div class="caixa-dicas">
+            <div class="ver-dica">
+
+                ver dica
+            </div>
+            <div class="dica">
+                <h2>dica:placehlder</h2>
+                <p>o placeholder nada mais é doque o texto que fica de exemplo na caixa do input ate voce digitar alguma coisa</p>
+             </div>
+        </div>
+        </p>
+
+
+    </form>
+
+
+
+</body>
+
+</html>
