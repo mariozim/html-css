@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>exemplo de formulario</h1>
+    <form action="#" method="post"> 
+
+        <p>
+            <label for="i-estado">informe seu estado: </label>
+            <select name="estado" id="i-estado" >
+                <optgroup label="nordeste">
+                    <option value="MG">minas gerais</option>
+                    <option value="CE" selected>ceará</option>
+                    
+                </optgroup>
+                <optgroup label="sudeste">
+    
+                    <option value="RJ">rio de janeiro</option>
+                    <option value="SP">são paulo</option>
+    
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="i-profissao">informe a sua profissão: </label>
+            <input type="text" name="profissao" id="i-profissao" list="list-profissoes">
+            <datalist id="list-profissoes">
+                <option value="Vendedor">Vendedor</option>
+                <option value="traficante">traficante</option>
+                <option value="prostituto">prostituto</option>
+
+            </datalist>
+
+            <p>
+                <label for="i-texto">insira o texto: </label><br>
+                <textarea name="texto" id="i-texto" rows="10" cols="30"> </textarea>
+            </p>
+        </p>
+
+        <p>
+            <input type="submit" value="enviar">
+        </p>
+    </form>
+    
+</body>
+</html>

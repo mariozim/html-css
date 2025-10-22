@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>exemplo de formulario</h1>
+    <form method="post">
+
+        <p>
+            <label for="i_ano">em que ano voce nasceu?: </label>
+            <input type="number" name="i_ano" id="i_ano" max="2025" min="1900" placeholder="ex: 2005" oninput="calcular()">
+        </p>
+
+        <p>
+            sua idade é: <output id="idade"></output>
+        </p>
+        <p>
+        <input type="submit" value="enviar">
+        </p>
+    </form>
+    <script>
+        let local_idade = document.getElementById('idade')
+        function calcular(){
+            let ano_nascimento = document.getElementById('i_ano')
+            let data = new Date()
+            let ano_atual = data.getFullYear()
+            local_idade.innerHTML = ano_atual - ano_nascimento.value
+        }
+        
+
+
+
+
+    </script>
+</body>
+</html>

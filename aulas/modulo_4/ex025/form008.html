@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>teste de formularios</h1>
+    <form  method="post" onsubmit="somar(event)">
+
+        <p>
+    
+            <label for="i_n1">1° Numero:</label>
+            <input type="number" name="n1" id="i_n1" min="0" max="50" required
+            >
+        </p>
+        <p>
+    
+            <label for="i_n2">2° Numero:</label>
+            <input type="number" name="n2" id="i_n2" min="0" max="50" required
+            >
+        </p>
+        <p>
+            <label for="i_soma">soma:  </label>
+            <output id="i_soma"></output>
+            
+        </p>
+
+        <p>
+            <input type="submit">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+    <script>
+        let n_1 = document.getElementById('i_n1')
+        let n_2 = document.getElementById('i_n2')
+        
+        function somar(event){
+            event.preventDefault()
+
+            document.getElementById('i_soma').innerHTML = Number(n_1.value) + Number(n_2.value)
+        }
+    </script>
+</body>
+</html>
